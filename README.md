@@ -100,6 +100,7 @@ Omitted configurations are default values set by MCC Melody.
 |Phase-Locked Loop 1|Enabled| This enables PLL which is required to run the PWM and |
 |Clock Source|FRC Oscillator|FRC is the hardware clock|
 |Requested PLL1 VCO Frequency|1600MHz  (or Maximum value)| The Requested Frequency is set to the maximum value for the peripheral clocks to use.|
+|Requested PLL1 Out Frequency|400MHz|Enable the highest frequency output for the both the PWM and DAC modules.|
 ![Clock Settings](images/ClockSettings.png)
 
 ##### 3.2 System Clock
