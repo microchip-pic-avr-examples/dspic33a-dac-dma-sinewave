@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>dspic33ak-dac-dma-sinewave</name>
+            <name>dspic33a-dac-dma-sinewave</name>
             <creation-uuid>3f0ed71b-4e68-4a14-8e89-e01588d76d91</creation-uuid>
             <make-project-type>0</make-project-type>
             <sourceEncoding>ISO-8859-1</sourceEncoding>

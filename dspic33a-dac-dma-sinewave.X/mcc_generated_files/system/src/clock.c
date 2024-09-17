@@ -53,10 +53,10 @@ void CLOCK_Initialize(void)
         
         Clock Generator 2 frequency                     : 8 MHz
         Clock Generator 3 frequency                     : 8 MHz
-        Clock Generator 5 frequency                     : 200 MHz
-        Clock Generator 7 frequency                     : 200 MHz
+        Clock Generator 5 frequency                     : 400 MHz
+        Clock Generator 7 frequency                     : 400 MHz
         
-        PLL 1 frequency                                 : 200 MHz
+        PLL 1 frequency                                 : 400 MHz
         PLL 1 VCO Out frequency                         : 200 MHz
 
     */
@@ -64,8 +64,8 @@ void CLOCK_Initialize(void)
     
     // NOSC FRC Oscillator; OE enabled; SIDL disabled; ON enabled; BOSC Serial Test Mode clock (PGC); FSCMEN disabled; DIVSWEN disabled; OSWEN disabled; EXTCFSEL disabled; EXTCFEN disabled; FOUTSWEN disabled; RIS disabled; PLLSWEN disabled; 
     PLL1CON = 0x9100UL;
-    // POSTDIV2 2x divide; POSTDIV1 4x divide; PLLFBDIV 200; PLLPRE 1; 
-    PLL1DIV = 0x100C822UL;
+    // POSTDIV2 1x divide; POSTDIV1 4x divide; PLLFBDIV 200; PLLPRE 1; 
+    PLL1DIV = 0x100C821UL;
     //Enable PLL Input and Feedback Divider update
     PLL1CONbits.PLLSWEN = 1U;
     while (PLL1CONbits.PLLSWEN == 1){};
@@ -88,8 +88,12 @@ void CLOCK_Initialize(void)
     
     // NOSC PLL1 Out output; OE enabled; SIDL disabled; ON enabled; BOSC FRC Oscillator; FSCMEN disabled; DIVSWEN disabled; OSWEN disabled; EXTCFSEL External clock fail detection module #1; EXTCFEN disabled; RIS disabled; 
     CLK1CON = 0x19500UL;
-    // FRACDIV 0; INTDIV 0; 
-    CLK1DIV = 0x0UL;
+    // FRACDIV 0; INTDIV 1; 
+    CLK1DIV = 0x10000UL;
+    //enable divide factors
+    CLK1CONbits.DIVSWEN = 1U; 
+    //wait for divide factors to get updated
+    while(CLK1CONbits.DIVSWEN == 1U){};
     //enable clock switching
     CLK1CONbits.OSWEN = 1U; 
     //wait for clock switching complete

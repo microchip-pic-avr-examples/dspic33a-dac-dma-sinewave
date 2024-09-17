@@ -61,7 +61,7 @@ extern const struct CMP_INTERFACE CMP_DAC1;
  * @ingroup  cmpdriver
  * @brief    This macro defines input clock for CMP1 
  */
-#define CMP1_CLOCK_FREQUENCY 200000000UL
+#define CMP1_CLOCK_FREQUENCY 400000000UL
 
 /**
  * @ingroup  cmpdriver
