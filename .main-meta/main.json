@@ -3,10 +3,10 @@
    "category":"com.microchip.ide.project",
    "content":{
       "metaDataVersion":"1.3.0",
-      "name":"com.microchip.mplabx.project.dspic33ak-dac-dma-sinewave",
+      "name":"com.microchip.mplabx.project.dspic33a-dac-dma-sinewave",
       "version":"1.0.0",
-      "displayName":"dsPIC33AK DAC DMA Sinewave Demo",
-      "projectName":"dspic33ak-dac-dma-sinewave",
+      "displayName":"dsPIC33A DAC DMA Sinewave Demo",
+      "projectName":"dspic33a-dac-dma-sinewave",
       "shortDescription":"This MPLAB® X IDE example demonstrates how to generate a 100Hz sine wave without CPU intervention by configuring the DAC and DMA Drivers within MCC Melody.",
       "ide":{
          "name":"MPLABX",
