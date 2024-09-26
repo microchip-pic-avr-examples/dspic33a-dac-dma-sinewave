@@ -1,4 +1,4 @@
-<config configName="default" projectName="dspic33ak-dac-dma-sinewave" configVersion="1.1" device="dsPIC33AK128MC106" deviceLibraryClass="com.microchip.mcc.melody.Library" coreVersion="5.7.1">
+<config configName="default" projectName="dspic33a-dac-dma-sinewave" configVersion="1.1" device="dsPIC33AK128MC106" deviceLibraryClass="com.microchip.mcc.melody.Library" coreVersion="5.7.1">
    <usedPackages class="java.util.ArrayList">
       <package packageName="@mchp-mcc/cmp-dac-driver" version="1.1.0" contentType="MELODY">
          <modules class="java.util.ArrayList"/>

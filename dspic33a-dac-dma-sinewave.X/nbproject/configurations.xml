@@ -42,7 +42,7 @@
                    displayName="Important Files"
                    projectFiles="true">
       <itemPath>Makefile</itemPath>
-      <itemPath>dspic33ak-dac-dma-sinewave.mc3</itemPath>
+      <itemPath>dspic33a-dac-dma-sinewave.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
