@@ -1,4 +1,4 @@
-# dspic33ak-dac-dma-sinewave v1.0.0
+# dspic33a-dac-dma-sinewave v1.0.0
 ### Release Highlights
 - Initial Release - Refer to the README.md for a summary and execution procedure
 
