@@ -128,7 +128,7 @@ Omitted configurations are default values set by MCC Melody.
 # Operation
 After programming the device the output can be read off of P51 on the dsPIC33A Curiosity Platform Development Board:
 
-<img src="images/Pin_selection.png" alt="Project Demo" width="700"/>
+<img src="images/Pin_Selection.png" alt="Pin Selection" width="700"/>
 
 A 100 Hz sine wave will be present:
 
