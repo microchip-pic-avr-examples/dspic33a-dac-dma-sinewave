@@ -99,6 +99,7 @@ Omitted configurations are default values set by MCC Melody.
 |Clock Source|FRC Oscillator|FRC is the hardware clock|
 |Requested PLL1 VCO Frequency|1600MHz  (or Maximum value)| The Requested Frequency is set to the maximum value for the peripheral clocks to use.|
 |Requested PLL1 Out Frequency|400MHz|Enable the highest frequency output for the both the PWM and DAC modules.|
+
 ![Clock Settings](images/ClockSettings.png)
 
 ##### 3.2 System Clock
@@ -106,6 +107,7 @@ Omitted configurations are default values set by MCC Melody.
 |---|---|---|
 |System Clock Source|PLL1 Out output|The PLL output (with FRC Oscillator) is required to set the maximum frequency for the system.|
 |Set Maximum System Frequency to Maximum|Enabled| This enables the maximum frequency.|
+
 ![Clock Settings -> System Clock](images/ClockSetting_SystemClock.png)
 
 ##### 3.3 PWM and DAC clock input settings
@@ -113,6 +115,7 @@ Omitted configurations are default values set by MCC Melody.
 |---|---|---|
 |System Clock Source|PLL1 Out output|The PLL output (with FRC Oscillator) is required to set the maximum frequency for the peripheral.|
 |Set Maximum System Frequency to Maximum|Enabled| This enables the maximum frequency.|
+
 ![Clock Settings -> PWM and DAC](images/ClockSetting_PWM_DAC.png)
 
 ### Programming the Device
