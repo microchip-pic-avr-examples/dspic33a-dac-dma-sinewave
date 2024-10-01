@@ -113,8 +113,8 @@ Omitted configurations are default values set by MCC Melody.
 ##### 3.3 PWM and DAC clock input settings
 |Setting|Value|Explanation|
 |---|---|---|
-|System Clock Source|PLL1 Out output|The PLL output (with FRC Oscillator) is required to set the maximum frequency for the peripheral.|
-|Set Maximum System Frequency to Maximum|Enabled| This enables the maximum frequency.|
+|Clock Source|PLL1 Out output|The PLL output (with FRC Oscillator) is required to set the maximum frequency for the peripheral.|
+|Enable Generator|Enabled| This enables the Clock Generator.|
 
 ![Clock Settings -> PWM and DAC](images/ClockSetting_PWM_DAC.png)
 
