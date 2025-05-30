@@ -1,8 +1,11 @@
-# dspic33a-dac-dma-sinewave v1.0.0
+# dspic33a-dac-dma-sinewave v1.0.1
 ### Release Highlights
-- Initial Release - Refer to the README.md for a summary and execution procedure
+- Updated Melody content and Device DFP to latest versions.
 
 ### Features Added\Updated
-- This MPLAB® X IDE example demonstrates how to generate a 100Hz sine wave without CPU intervention by configuring the DAC and DMA Drivers within MCC Melody.
-- The SCCP Output Compare event is used as a trigger for the DMA to place values from a sine wave lookup table to the DAC output register. 
-
+- Updated project to latest Melody content versions:
+    - CMP-DAC v1.1.0
+    - DMA v1.1.0
+    - MCCP v1.1.0
+    - PWM v1.0.7 
+- Melody version updated to v2.9.1
