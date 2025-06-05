@@ -2,7 +2,7 @@
 
 manifest_file_version: 1.0.0
 project: dspic33a-dac-dma-sinewave
-creation_date: 2025-06-05T08:54:57.819-07:00[America/Phoenix]
+creation_date: 2025-06-05T10:36:42.257-07:00[America/Phoenix]
 operating_system: Windows 11
 mcc_mode: IDE
 mcc_mode_version: v6.25
@@ -10,7 +10,7 @@ device_name: dsPIC33AK128MC106
 compiler: XCDSC 3.21
 mcc_version: 5.5.2
 mcc_core_version: 5.7.1
-content_manager_version: 5.0.0
+content_manager_version: 5.0.1
 is_mcc_offline: false
 is_using_prerelease_versions: false
 mcc_content_registries: https://registry.npmjs.org/
