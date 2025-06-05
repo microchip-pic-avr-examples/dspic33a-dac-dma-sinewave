@@ -7,13 +7,13 @@
  *            
  * @brief     Clock configurator driver for System and Peripheral Clock using dsPIC MCUs.
  *
- * @version   PLIB Version 1.1.0
+ * @skipline @version   PLIB Version 1.1.2
  *
  * @skipline  Device : dsPIC33AK128MC106
 */
 
 /*
-© [2024] Microchip Technology Inc. and its subsidiaries.
+© [2025] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -117,6 +117,9 @@ inline static uint32_t CLOCK_GeneratorFrequencyGet(enum CLOCK_GENERATOR generato
                 break;
         case CLOCK_GENERATOR_7:
                 genFrequency = 400000000UL;
+                break;
+        case CLOCK_GENERATOR_12:
+                genFrequency = 8000000UL;
                 break;
         default:
                 break;

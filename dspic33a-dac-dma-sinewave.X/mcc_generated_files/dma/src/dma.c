@@ -7,13 +7,13 @@
  * 
  * @brief     This is the generated driver source file for DMA driver
  *
- * @skipline @version   PLIB Version 1.0.1
+ * @skipline @version   PLIB Version 1.1.0
  *
  * @skipline  Device : dsPIC33AK128MC106
 */
 
 /*
-© [2024] Microchip Technology Inc. and its subsidiaries.
+© [2025] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -76,17 +76,17 @@ void DMA_Initialize(void)
     DMALOW= 0x4000UL;
     // HADDR 32768; 
     DMAHIGH= 0x8000UL;
-    // CHEN disabled; HALFEN disabled; MATEN disabled; INTOEN disabled; CHREQ disabled; SIZE 32-bit; FLWCON Read from SADDR[23:0] followed by write to DADDR[23:0]; TRMODE Repeated One-Shot; DAMODE Unchanged; SAMODE Incremented; RETEN disabled; RELOADS enabled; RELOADD enabled; RELOADC enabled; PCHAEN disabled; PPEN disabled; 
+    // CHEN disabled; HALFEN disabled; MATCHEN disabled; DONEEN disabled; CHREQ disabled; SIZE 32-bit; FLWCON Read from SADDR[23:0] followed by write to DADDR[23:0]; TRMODE Repeated One-Shot; DAMODE Unchanged; SAMODE Incremented; RETEN disabled; RELOADS enabled; RELOADD enabled; RELOADC enabled; PCHEN disabled; PPEN disabled; 
     DMA0CH= 0x7004480UL;
-    // CHEN disabled; HALFEN disabled; MATEN disabled; INTOEN disabled; CHREQ disabled; SIZE Byte; FLWCON Read from SADDR[23:0] followed by write to DADDR[23:0]; TRMODE One-Shot; DAMODE Unchanged; SAMODE Unchanged; RETEN disabled; RELOADS disabled; RELOADD disabled; RELOADC disabled; PCHAEN disabled; PPEN disabled; 
+    // CHEN disabled; HALFEN disabled; MATCHEN disabled; DONEEN disabled; CHREQ disabled; SIZE Byte; FLWCON Read from SADDR[23:0] followed by write to DADDR[23:0]; TRMODE One-Shot; DAMODE Unchanged; SAMODE Unchanged; RETEN disabled; RELOADS disabled; RELOADD disabled; RELOADC disabled; PCHEN disabled; PPEN disabled; 
     DMA1CH= 0x0UL;
-    // CHEN disabled; HALFEN disabled; MATEN disabled; INTOEN disabled; CHREQ disabled; SIZE Byte; FLWCON Read from SADDR[23:0] followed by write to DADDR[23:0]; TRMODE One-Shot; DAMODE Unchanged; SAMODE Unchanged; RETEN disabled; RELOADS disabled; RELOADD disabled; RELOADC disabled; PCHAEN disabled; PPEN disabled; 
+    // CHEN disabled; HALFEN disabled; MATCHEN disabled; DONEEN disabled; CHREQ disabled; SIZE Byte; FLWCON Read from SADDR[23:0] followed by write to DADDR[23:0]; TRMODE One-Shot; DAMODE Unchanged; SAMODE Unchanged; RETEN disabled; RELOADS disabled; RELOADD disabled; RELOADC disabled; PCHEN disabled; PPEN disabled; 
     DMA2CH= 0x0UL;
-    // CHEN disabled; HALFEN disabled; MATEN disabled; INTOEN disabled; CHREQ disabled; SIZE Byte; FLWCON Read from SADDR[23:0] followed by write to DADDR[23:0]; TRMODE One-Shot; DAMODE Unchanged; SAMODE Unchanged; RETEN disabled; RELOADS disabled; RELOADD disabled; RELOADC disabled; PCHAEN disabled; PPEN disabled; 
+    // CHEN disabled; HALFEN disabled; MATCHEN disabled; DONEEN disabled; CHREQ disabled; SIZE Byte; FLWCON Read from SADDR[23:0] followed by write to DADDR[23:0]; TRMODE One-Shot; DAMODE Unchanged; SAMODE Unchanged; RETEN disabled; RELOADS disabled; RELOADD disabled; RELOADC disabled; PCHEN disabled; PPEN disabled; 
     DMA3CH= 0x0UL;
-    // CHEN disabled; HALFEN disabled; MATEN disabled; INTOEN disabled; CHREQ disabled; SIZE Byte; FLWCON Read from SADDR[23:0] followed by write to DADDR[23:0]; TRMODE One-Shot; DAMODE Unchanged; SAMODE Unchanged; RETEN disabled; RELOADS disabled; RELOADD disabled; RELOADC disabled; PCHAEN disabled; PPEN disabled; 
+    // CHEN disabled; HALFEN disabled; MATCHEN disabled; DONEEN disabled; CHREQ disabled; SIZE Byte; FLWCON Read from SADDR[23:0] followed by write to DADDR[23:0]; TRMODE One-Shot; DAMODE Unchanged; SAMODE Unchanged; RETEN disabled; RELOADS disabled; RELOADD disabled; RELOADC disabled; PCHEN disabled; PPEN disabled; 
     DMA4CH= 0x0UL;
-    // CHEN disabled; HALFEN disabled; MATEN disabled; INTOEN disabled; CHREQ disabled; SIZE Byte; FLWCON Read from SADDR[23:0] followed by write to DADDR[23:0]; TRMODE One-Shot; DAMODE Unchanged; SAMODE Unchanged; RETEN disabled; RELOADS disabled; RELOADD disabled; RELOADC disabled; PCHAEN disabled; PPEN disabled; 
+    // CHEN disabled; HALFEN disabled; MATCHEN disabled; DONEEN disabled; CHREQ disabled; SIZE Byte; FLWCON Read from SADDR[23:0] followed by write to DADDR[23:0]; TRMODE One-Shot; DAMODE Unchanged; SAMODE Unchanged; RETEN disabled; RELOADS disabled; RELOADD disabled; RELOADC disabled; PCHEN disabled; PPEN disabled; 
     DMA5CH= 0x0UL;
     // CHSEL SCCP1; 
     DMA0SEL= 0x18UL;
@@ -100,17 +100,17 @@ void DMA_Initialize(void)
     DMA4SEL= 0x0UL;
     // CHSEL INT0; 
     DMA5SEL= 0x0UL;
-    // MATCH disabled; OVERRUN disabled; HALF disabled; DONE disabled; DMAFLT No Fault; DMAFLT2 disabled; DMAFLT3 disabled; 
+    // MATCH disabled; OVERRUN disabled; HALF disabled; DONE disabled; ADRERR No Fault; BRERR disabled; BWERR disabled; 
     DMA0STAT= 0x0UL;
-    // MATCH disabled; OVERRUN disabled; HALF disabled; DONE disabled; DMAFLT No Fault; DMAFLT2 disabled; DMAFLT3 disabled; 
+    // MATCH disabled; OVERRUN disabled; HALF disabled; DONE disabled; ADRERR No Fault; BRERR disabled; BWERR disabled; 
     DMA1STAT= 0x0UL;
-    // MATCH disabled; OVERRUN disabled; HALF disabled; DONE disabled; DMAFLT No Fault; DMAFLT2 disabled; DMAFLT3 disabled; 
+    // MATCH disabled; OVERRUN disabled; HALF disabled; DONE disabled; ADRERR No Fault; BRERR disabled; BWERR disabled; 
     DMA2STAT= 0x0UL;
-    // MATCH disabled; OVERRUN disabled; HALF disabled; DONE disabled; DMAFLT No Fault; DMAFLT2 disabled; DMAFLT3 disabled; 
+    // MATCH disabled; OVERRUN disabled; HALF disabled; DONE disabled; ADRERR No Fault; BRERR disabled; BWERR disabled; 
     DMA3STAT= 0x0UL;
-    // MATCH disabled; OVERRUN disabled; HALF disabled; DONE disabled; DMAFLT No Fault; DMAFLT2 disabled; DMAFLT3 disabled; 
+    // MATCH disabled; OVERRUN disabled; HALF disabled; DONE disabled; ADRERR No Fault; BRERR disabled; BWERR disabled; 
     DMA4STAT= 0x0UL;
-    // MATCH disabled; OVERRUN disabled; HALF disabled; DONE disabled; DMAFLT No Fault; DMAFLT2 disabled; DMAFLT3 disabled; 
+    // MATCH disabled; OVERRUN disabled; HALF disabled; DONE disabled; ADRERR No Fault; BRERR disabled; BWERR disabled; 
     DMA5STAT= 0x0UL;
     // SADDR 0; 
     DMA0SRC= 0x0UL;

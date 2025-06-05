@@ -65,9 +65,9 @@ int main(void)
     
     SYSTEM_Initialize();
     
-    DMA.SourceAddressSet(DMA_CHANNEL_0, &sineTable[0]);
+    DMA.SourceAddressSet(DMA_CHANNEL_0, (size_t)&sineTable[0]);
     
-    DMA.DestinationAddressSet(DMA_CHANNEL_0, &DAC1DAT);
+    DMA.DestinationAddressSet(DMA_CHANNEL_0, (size_t)&DAC1DAT);
     
     DMA.ChannelEnable(DMA_CHANNEL_0);
     
