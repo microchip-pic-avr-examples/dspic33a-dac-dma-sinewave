@@ -7,13 +7,13 @@
  * 
  * @brief     This is the generated driver types header file for the CLOCK driver
  *
- * @version   PLIB Version 1.1.0
+ * @skipline @version   PLIB Version 1.1.2
  *
  * @skipline  Device : dsPIC33AK128MC106
 */
 
 /*
-© [2024] Microchip Technology Inc. and its subsidiaries.
+© [2025] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -43,11 +43,12 @@
 */
 enum CLOCK_GENERATOR
 {
-    CLOCK_GENERATOR_1,    /**< Clock Generator 1 */
-    CLOCK_GENERATOR_2,    /**< Clock Generator 2 */
-    CLOCK_GENERATOR_3,    /**< Clock Generator 3 */
-    CLOCK_GENERATOR_5,    /**< Clock Generator 5 */
-    CLOCK_GENERATOR_7,    /**< Clock Generator 7 */
+    CLOCK_GENERATOR_1 = 1,    /**< Clock Generator 1 */
+    CLOCK_GENERATOR_2 = 2,    /**< Clock Generator 2 */
+    CLOCK_GENERATOR_3 = 3,    /**< Clock Generator 3 */
+    CLOCK_GENERATOR_5 = 5,    /**< Clock Generator 5 */
+    CLOCK_GENERATOR_7 = 7,    /**< Clock Generator 7 */
+    CLOCK_GENERATOR_12 = 12,    /**< Clock Generator 12 */
     
     CLOCK_SYSTEM = 1,    /**< Clock for System */
     CLOCK_FRC = 2,    /**< Clock for FRC */
@@ -55,8 +56,10 @@ enum CLOCK_GENERATOR
     CLOCK_BFRC = 3,    /**< Clock for BFRC */
     CLOCK_PWM = 5,    /**< Clock for PWM */
     CLOCK_CMP_DAC = 7,    /**< Clock for CMP_DAC */
+    CLOCK_CCP = 12,    /**< Clock for CCP */
+    CLOCK_REFO1 = 12,    /**< Clock for REFO1 */
     
-    CLOCK_GENERATOR_MAX = 5
+    CLOCK_GENERATOR_MAX = 6
 };
 
 /**
@@ -71,6 +74,7 @@ enum CLOCK_FAIL_STATUS_MASKS
     CLOCK_GEN3_FAIL_MASK = 0x4,    /**< Fail mask for Clock Generator 3 */
     CLOCK_GEN5_FAIL_MASK = 0x10,    /**< Fail mask for Clock Generator 5 */
     CLOCK_GEN7_FAIL_MASK = 0x40,    /**< Fail mask for Clock Generator 7 */
+    CLOCK_GEN12_FAIL_MASK = 0x800,    /**< Fail mask for Clock Generator 12 */
     CLOCK_PLL1_FAIL_MASK = 0x1000000,    /**< Fail mask for PLL Generator 1 */
 };
 

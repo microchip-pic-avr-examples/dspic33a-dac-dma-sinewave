@@ -7,14 +7,14 @@
  *            
  * @brief     This is the generated driver source file for CMP1 driver
  *
- * @skipline @version   PLIB Version 1.0.1
+ * @skipline @version   PLIB Version 1.1.0
  *            
  * @skipline  Device : dsPIC33AK128MC106
 */
 
 
 /*
-© [2024] Microchip Technology Inc. and its subsidiaries.
+© [2025] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -79,8 +79,8 @@ void CMP1_Initialize(void)
 
     //Slope Settings
     DAC1DAT = 0xF3200CDUL; //DACLOW 205; DACDAT 3890; 
-    SLP1CON = 0x0UL; //SLPSTRT None; SLPSTOPB None; SLPSTOPA None; HCFSEL None; FFSEN disabled; PSE Negative; TWME disabled; HME disabled; SLOPEN disabled; 
-    SLP1DAT = 0x0UL; //SLPDAT 0; 
+    DAC1SLPCON = 0x0UL; //SLPSTRT None; SLPSTOPB None; SLPSTOPA None; HCFSEL None; FFSEN disabled; PSE Negative; TWME disabled; HME disabled; SLOPEN disabled; 
+    DAC1SLPDAT = 0x0UL; //DAC1SLPDAT 0; 
     
     CMP1_EventCallbackRegister(&CMP1_EventCallback);
     
@@ -99,8 +99,8 @@ void CMP1_Deinitialize(void)
 
     //Slope Settings
     DAC1DAT = 0x0UL;
-    SLP1CON = 0x0UL;
-    SLP1DAT = 0x0UL;
+    DAC1SLPCON = 0x0UL;
+    DAC1SLPDAT = 0x0UL;
 }
 
 void CMP1_Calibrate(void)
