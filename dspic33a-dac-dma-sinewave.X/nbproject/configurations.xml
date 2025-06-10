@@ -95,7 +95,7 @@
         <targetDevice>dsPIC33AK128MC106</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>pkob4hybrid</platformTool>
+        <platformTool>noID</platformTool>
         <languageToolchain>XCDSC</languageToolchain>
         <languageToolchainVersion>3.21</languageToolchainVersion>
         <platform>3</platform>
@@ -132,9 +132,9 @@
       </makeCustomizationType>
       <C30>
         <property key="cast-align" value="false"/>
-        <property key="code-model" value="default"/>
+        <property key="code-model" value="small-code"/>
         <property key="const-model" value="default"/>
-        <property key="data-model" value="default"/>
+        <property key="data-model" value="small-data"/>
         <property key="disable-instruction-scheduling" value="false"/>
         <property key="enable-all-warnings" value="true"/>
         <property key="enable-ansi-std" value="false"/>
@@ -226,7 +226,7 @@
         <property key="map-file" value="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"/>
         <property key="no-ivt" value="false"/>
         <property key="oXC16ld-extra-opts" value=""/>
-        <property key="oXC16ld-fill-upper" value="0"/>
+        <property key="oXC16ld-fill-upper" value=""/>
         <property key="oXC16ld-force-link" value="false"/>
         <property key="oXC16ld-no-smart-io" value="false"/>
         <property key="oXC16ld-nostdlib" value="false"/>
