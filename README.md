@@ -137,6 +137,24 @@ A 100 Hz sine wave will be present:
 
 ![Sine Wave reading on an oscilloscope](images/SineWaveReading.png)
 
+## Porting the Sinewave Demo to the dsPIC33AK512MPS512 family
+
+1. Open the dspic33a-dac-dma-sinewave.X project in the MPLAB® X IDE. 
+
+2. Right click the project in "Projects" tab of MPLAB® X IDE and select Properties. Change the device name to one in the dsPIC33AK512MPS512 Family. Example:
+<img src="images/UpdatingDeviceSelection.png" alt="Updating Device Selection" width="700"/>
+
+3. Choose the latest DFP and XC-DSC compiler versions in the same configuration menu, Select "Apply" and "OK" with these settings.
+
+4. Right click the project in "Projects" tab of MPLAB® X IDE and select "Set as Main Project".
+
+5. Open Melody by selecting the MCC button.
+
+6. Select new pin for DACOUT noting the pin output in relation to the curiosity board. Note: Pin selection may be updated automatically. Example for the dsPIC33AK512MPS512 DACOUT1 is selected to be RA1 and the sinewave output can be read on P48 on the dsPIC33A Curiosity Platform Development Board. 
+
+7. Select the Generate Button under project resources.
+    - DO NOT overwrite the contents of the main.c.
+
 ## PWM Melody driver's requested frequency explanation
 
 The PWM Melody driver (not hardware peripheral) is being used to trigger the SCCP1 Output Compare event only.
